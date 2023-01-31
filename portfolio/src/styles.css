@@ -2,13 +2,15 @@ body{
     font-family:"Roboto Mono",sans-serif ;
 }
 section{
-    height:500px;
+    /* height:500px; */
     background:white;
     border:solid black 2px;
 }
 
 .hero{
-    background-color: #00008B;
+    background-color:
+    /* #A3CFA7; */
+     #00008B;
     height:100vh;
     color:white;
     font-size: 30px;
@@ -22,6 +24,13 @@ footer{
 nav {
     display:flex;
     justify-content: space-between;
+}
+
+.logo{
+    height:150px;
+    margin:2px;
+    
+
 }
 
 ul{
@@ -102,4 +111,36 @@ p{
 
 .socials{
     padding-bottom: 250px;
+}
+
+.logo-social {
+    margin:20px;
+}
+
+.sub-section {
+    display:flex;
+    justify-content:space-around;
+    padding:80px;
+}
+
+h2{
+    font-size:50px;
+}
+
+.headshot {
+    width:300px;
+    border-radius:150px;
+    
+}
+
+.headshot-container{
+    display:flex;
+    align-items: center;
+}
+
+.project-card{
+    border: solid black 1px;
+    width:300px;
+    height:200px;
+
 }
