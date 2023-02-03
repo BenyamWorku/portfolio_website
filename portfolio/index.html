@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
+<script src="https://kit.fontawesome.com/55d808b8a7.js" crossorigin="anonymous"></script>   
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>benyam's portfolio</title>
@@ -16,12 +17,16 @@
     <section class="hero">
         <nav>
             <img class="logo" src="src/images/image2vector.svg"/>
-            <ul>
-                <li>About me</li>
-                <li>Projects</li>
-                <li>Contact me</li>
+            <ul id="nav-list">
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a target="_blank" href="https://benyam.medium.com/">blog</a></li>
+                <li><a href="#contact-me">Contact me</a></li>
                 
             </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
         <div class="hero-area">
             <div class="hero-text">
@@ -63,31 +68,77 @@
         
         
     </section>
-    <section class="sub-section">
+    <section class="sub-section" id="about-me">
         <div class="information">
             <h2>About Me</h2>
             <p> I got the bug for data surgery!</p>
+
+           
         </div>
         <div class="headshot-container">
-            <img class="headshot" src="src/images/benyam_headshot_2023.jpg" alt="Benyam's headshot"/>
+            <div class="photo-cv">
+                <!-- find a beter place to put the link to the CV -->
+                <img class="headshot" src="src/images/benyam_headshot_2023.jpg" alt="Benyam's headshot"/>
+                <div class="hand-cv">
+                    <i class="fas fa-hand-point-right hand-icon"></i>
+                    <p><a target="blank" href="https://docs.google.com/document/d/1c2-8TAJ5Ll4ryi-kD2zMp5yJC7wibx93V5hOQ4Nfgqo/edit?usp=sharing" class="cv-link">CV</a></p>
+                </div>
+                
+            </div>
+            <!--Give doc or pdf as well as download options  -->
         </div>
-    </section>
-    <section class="sub-section">
-        <h2>Data Theatre </h2>
-        <div class="project-card" >
+        
+            
 
         </div>
-        <div class="project-card" >
-            
-        </div>
-        <div class="project-card" >
-            
-        </div>
-        <div class="project-card" >
-            
-        </div>
     </section>
-    <footer></footer>
+    <section class="sub-section-alternative" id="projects">
+        <h2>Data Theatre </h2>
+        <div class="project-container">
+            <div class="project-card" >
+                <img class="project-image" src="src/images/Beer Analysis.png" alt="my first project"/>
+                <h3>Power BI Viz</h3>
+                <p class="subtext">Beer Analysis of the American market</p>
+                <hr/>
+                <p class="subtext">
+                    <a class="project-link" target="_blank" href=  "https://github.com/BenyamWorku?tab=repositories">View here</a>
+                </p>
+            </div>
+            <div class="project-card" >
+                <img class="project-image" src="src/images/Beer Analysis.png" alt="my second project"/>
+                <h3>Power BI Viz</h3>
+                <p class="subtext">Beer Analysis of the American market</p>
+                <hr/>
+                <p class="subtext">
+                    <a class="project-link" target="_blank" href=  "https://github.com/BenyamWorku?tab=repositories">View here</a>
+                </p>
+            </div>
+            <div class="project-card" >
+                <img class="project-image" src="src/images/Tableau Viz.png" alt="my third project"/>
+                <h3>Tableau Viz</h3>
+                <p class="subtext">Movies Analysis </p>
+                <hr/>
+                <p class="subtext">
+                    <a class="project-link" target="_blank" href=  "https://github.com/BenyamWorku?tab=repositories">View here</a>
+                </p>
+            </div>
+            <div class="project-card" >
+                <img class="project-image" src="src/images/Beer Analysis.png" alt="my fourth project"/>
+                <h3>Power BI Viz</h3>
+                <p class="subtext">Beer Analysis of the American market</p>
+                <hr/>
+                <p class="subtext">
+                    <a class="project-link" target="_blank" href=  "https://github.com/BenyamWorku?tab=repositories">View here</a>
+                </p>
+            </div>
+        </div>
+       
+    </section>
+    <footer id="contact-me">
+        <h2>Contact me</h2>
+        <p>benworku@gmail.com</p> 
+        <!-- make this a form -->
+    </footer>
 
 <script src="src/app.js"></script>
 </body>

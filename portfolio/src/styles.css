@@ -4,7 +4,7 @@ body{
 section{
     /* height:500px; */
     background:white;
-    border:solid black 2px;
+    /* border:solid black 2px; */
 }
 
 .hero{
@@ -17,13 +17,18 @@ section{
 }
 
 footer{
-    height:500px;
+    /* height:500px; */
+    padding:80px;
     background-color: black;
+    color:white;
+    text-align:center;
+
 }
 
 nav {
     display:flex;
     justify-content: space-between;
+    border:2px red solid;
 }
 
 .logo{
@@ -35,10 +40,15 @@ nav {
 
 ul{
     display:flex;
-    list-style-type: none;
+    /* list-style-type: none; */
+    list-style:none;
     width:600px;
     justify-content:space-around;
     font-size:20px;
+}
+
+ul.show{
+    display:block;
 }
 
 li {
@@ -123,6 +133,12 @@ p{
     padding:80px;
 }
 
+.sub-section-alternative{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    padding:80px;
+}
 h2{
     font-size:50px;
 }
@@ -136,11 +152,111 @@ h2{
 .headshot-container{
     display:flex;
     align-items: center;
-}
+} 
 
 .project-card{
-    border: solid black 1px;
+    /* border: solid black 1px; */
+    box-shadow:5px 5px 20px rgb(146, 140, 140);
     width:300px;
-    height:200px;
+    height:500px;
+    margin:10px;
+
 
 }
+
+.project-container{
+    display:flex;
+    justify-content:space-around;
+}
+
+.project-image{
+    margin-top:25px;
+    width:250px;
+    border-radius:125px;    
+}
+
+.subtext{
+    font-size:15px;
+    font-weight:300;
+
+}
+
+hr{
+    margin-left:20px ;
+    margin-right: 20px;
+
+}
+
+.project-link {
+    text-decoration:none ;
+    color: rgb(109, 82, 50)
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.hand-cv {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.cv-link{
+    color:black;
+    font-weight: 80;
+    /* padding-left:180px; */
+    /* text-align:center; */
+}
+
+.hand-icon{
+    font-size: 40px;
+    /* padding-left:100px; */
+    color:orange;
+}
+
+.hamburger{
+   display:none;
+    
+}
+
+.hamburger:focus{
+    outline:0;
+}
+/* responsive bits */
+@media only screen and (max-width:1000px){
+    .project-container{
+        display:flex;
+        flex-wrap:wrap;
+    }
+}
+@media only screen and (max-width:1000px){
+   
+    .hamburger{
+        display:block;
+        border:0;
+        background-color:transparent;
+        color:white;
+        font-size:30px;
+
+    }
+
+    ul{
+        display:none;
+        background-color: rgb(46, 46, 95);
+    }
+
+    nav{
+        align-items:flex;
+        background-color: rgb(46, 46, 95);
+        flex-direction: column-reverse;
+
+
+
+    }
+
+    .logo{
+        display:none;
+    }
+}
+
