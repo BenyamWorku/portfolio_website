@@ -131,8 +131,13 @@ p{
     display:flex;
     justify-content:space-around;
     padding:80px;
+    
 }
 
+.information {
+    width:100%;
+    
+}
 .sub-section-alternative{
     display:flex;
     flex-direction:column;
@@ -154,6 +159,10 @@ h2{
     align-items: center;
 } 
 
+img {
+    width:100%;
+    height:auto;
+}
 #pdf-window{
     display:none;
     position: fixed;
