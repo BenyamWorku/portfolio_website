@@ -1,3 +1,14 @@
+
+window.onload = function() {
+  if (location.hash !=="")
+ {
+  // history.replaceState(null, null, "#");
+  location.hash="";
+  // scrollTo(0,0);
+  
+ }
+ location.replace(location.href);
+};
 const typewriter = document.querySelector(".typewriter");
   const caret = typewriter.style.borderRight;
   const text = typewriter.innerHTML;
