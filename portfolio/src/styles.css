@@ -28,7 +28,7 @@ footer{
 nav {
     display:flex;
     justify-content: space-between;
-    border:2px red solid;
+    /* border:2px red solid; */
 }
 
 .logo{
@@ -260,3 +260,30 @@ a{
     }
 }
 
+/* styling for options.html */
+#provider-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+
+  }
+
+  #provider-list li {
+    width: 33.33%;
+    text-align: center;
+  }
+
+  #provider-list a {
+    display: block;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+
+  #provider-list a:hover {
+    background-color: gray;
+  }

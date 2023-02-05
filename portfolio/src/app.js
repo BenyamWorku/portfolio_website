@@ -19,3 +19,14 @@ function toggleButton() {
 }
 
 hamburgerButton.addEventListener('click', toggleButton)
+
+document.getElementById("email-link").addEventListener("click",function(event)
+{
+  event.preventDefault();
+  window.open("options.html","choose Email Provider","width=400,height=500");
+
+})
+
+
+
+
