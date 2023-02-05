@@ -7,7 +7,7 @@ window.onload = function() {
   // scrollTo(0,0);
   
  }
- location.replace(location.href);
+//  location.replace(location.href);
 };
 const typewriter = document.querySelector(".typewriter");
   const caret = typewriter.style.borderRight;
@@ -44,6 +44,22 @@ document.getElementById("email-link").addEventListener("click",function(event)
 
 })
 
+// displays the cv in pdf 
+// document.getElementById("pdf-link").addEventListener("click", function(event) {
+//   event.preventDefault();
+//   document.getElementById("pdf-window").style.display = "block";
+// });
+
+// document.getElementById("pdf-window").addEventListener("click", function(event) {
+//   if (event.target == this) {
+//     document.getElementById("pdf-window").style.display = "none";
+//   }
+// });
+
+document.getElementById("pdf-link").addEventListener("click", function(event) {
+  event.preventDefault();
+  window.open(this.href, '_blank');
+});
 
 
 
