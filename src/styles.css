@@ -28,13 +28,13 @@ footer{
 nav {
     display:flex;
     justify-content: space-between;
-    /* border:2px red solid; */
+    border:2px red solid;
 }
 
 .logo{
     height:150px;
     margin:2px;
-    
+   
 
 }
 
@@ -134,10 +134,7 @@ p{
     
 }
 
-.information {
-    width:100%;
-    
-}
+
 .sub-section-alternative{
     display:flex;
     flex-direction:column;
@@ -159,8 +156,8 @@ h2{
     align-items: center;
 } 
 
-img {
-    width:100%;
+img > .headshot{
+    width:80%;
     height:auto;
 }
 #pdf-window{
